@@ -6,13 +6,17 @@ public class Deductibles {
 
 
     public Double calculateDependents() { //calculate deductions due to dependents
-
+        return 0.0;
     }
 
     //also have a function for retirement plan/IRA deductions, since those are also not itemized
 
     public Double calculateItemizedDeductions(Double AGI, Double MAGI) {
         double rtn = 0;
+        Integer val = 10;
+        Double lols = 100.0;
+        rtn = lols;
+        int integerasdfa = val;
 
         //From charitable donations:
         //percentage limit for charitable donations is 60% of user's AGI
@@ -22,6 +26,7 @@ public class Deductibles {
         //calculate the "floor" amount based on AGI; we can only deduct amounts that exceed the floor
 
         //From state and local taxes:
+        return 0.0;
     }
     public Double getTotalDeductions() {
         //here, determine whether itemized deductions exceed standard deduction based on filing status
