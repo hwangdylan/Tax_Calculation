@@ -12,7 +12,7 @@ public class Deductibles {
     //also have a function for retirement plan/IRA deductions, since those are also not itemized
 
     public Double calculateItemizedDeductions(Double AGI, Double MAGI) {
-        Double rtn = 0;
+        double rtn = 0;
 
         //From charitable donations:
         //percentage limit for charitable donations is 60% of user's AGI
