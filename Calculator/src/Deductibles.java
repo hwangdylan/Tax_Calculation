@@ -25,7 +25,23 @@ public class Deductibles {
         //From medical/dental expenses:
         //calculate the "floor" amount based on AGI; we can only deduct amounts that exceed the floor
 
-        //From state and local taxes:
+        //From state and local taxes (called SALT deduction):
+        //can deduct state individual income, sales and property taxes up to a limit of $10,000 in total
+
+        //Interest deductions:
+        //1) student loan interest: if user's MAGI doesn't exceed $80K (or 165K if married joint return), up to $2,500 deductions
+        /**2) mortgage loan interest: can deduct interest on up to $750K of mortgage loan debt, or $350K each if married filing separately
+         * BUT for mortgages taken out before 2018, the numbers are $1M and $500K, respectively
+         */
+
+        //casualty and theft losses: only for a natural disaster so .... later
+
+        //I think that's all (see kellyphillipserb forbes article)
+
+        /**note: a lot of these numbers are different from 2018-2025 because of a tax act.
+         * for example, there used to be misc. deductions subject to a 2% floor.
+         * that has been repealed for the 2018-2025 period.
+         */
         return 0.0;
     }
     public Double getTotalDeductions() {
