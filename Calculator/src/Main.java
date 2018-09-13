@@ -29,7 +29,6 @@ public class Main {
             StdDraw.setPenColor(StdDraw.BLUE);
             StdDraw.text(width/2, height/2 + 100, "What is your gross income?");
             StdDraw.show();
-
         } else {
             doNext();
         }

@@ -1,9 +1,8 @@
-import java.util.Scanner; //actually we'll take care of user input later
-
 /** calculates the deductibles*/
 public class Deductibles {
     private Double totalDeductions;
 
+    public static final double CHARITY_PERCENT = 0.6;
 
     public Double calculateDependents() { //calculate deductions due to dependents
         return 0.0;
@@ -29,7 +28,6 @@ public class Deductibles {
 
         //From charitable donations:
         //percentage limit for charitable donations is 60% of user's AGI
-
 
         //From medical/dental expenses:
         //calculate the "floor" amount based on AGI; we can only deduct amounts that exceed the floor
