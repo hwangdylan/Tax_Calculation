@@ -9,7 +9,14 @@ public class Deductibles {
         return 0.0;
     }
 
-    public Double calculateIRADeduction() { //not itemized: deductions from IRAs
+    public Double calculateIRADeduction() { //not itemized: deductions from IRAs and 401ks
+        //traditional IRA (your own) and 401k (or any other employer-sponsored plan) are different for this purpose
+
+        //IRA: https://www.irs.gov/retirement-plans/plan-participant-employee/2018-ira-contribution-and-deduction-limits-effect-of-modified-agi-on-deductible-contributions-if-you-are-not-covered-by-a-retirement-plan-at-work
+
+        //Employer-sponsored plan: https://www.irs.gov/retirement-plans/plan-participant-employee/2018-ira-contribution-and-deduction-limits-effect-of-modified-agi-on-deductible-contributions-if-you-are-covered-by-a-retirement-plan-at-work
+
+        //need to figure out how to calculate partial deduction for the phase-out ranges. note the contribution limits to each plan
         return 0.0;
     }
 
