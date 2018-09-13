@@ -9,7 +9,7 @@ public class Deductibles {
         return 0.0;
     }
 
-    public Double calculateIRADeduction() { //not itemized: deductions from IRAs and 401ks
+    public Double calculateIRADeduction(Double MAGI, Integer filingStatus) { //use const ints for filing status?
         //traditional IRA (your own) and 401k (or any other employer-sponsored plan) are different for this purpose
 
         //IRA: https://www.irs.gov/retirement-plans/plan-participant-employee/2018-ira-contribution-and-deduction-limits-effect-of-modified-agi-on-deductible-contributions-if-you-are-not-covered-by-a-retirement-plan-at-work
@@ -20,7 +20,7 @@ public class Deductibles {
         return 0.0;
     }
 
-    public Double calculateItemizedDeductions(Double AGI, Double MAGI) { //also need filing status parameter
+    public Double calculateItemizedDeductions(Double AGI, Double MAGI, Integer filingStatus) {
         double rtn = 0;
         Integer val = 10;
         Double lols = 100.0;
