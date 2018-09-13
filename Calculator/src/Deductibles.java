@@ -9,9 +9,11 @@ public class Deductibles {
         return 0.0;
     }
 
-    //also have a function for retirement plan/IRA deductions, since those are also not itemized
+    public Double calculateIRADeduction() { //not itemized: deductions from IRAs
+        return 0.0;
+    }
 
-    public Double calculateItemizedDeductions(Double AGI, Double MAGI) {
+    public Double calculateItemizedDeductions(Double AGI, Double MAGI) { //also need filing status parameter
         double rtn = 0;
         Integer val = 10;
         Double lols = 100.0;
