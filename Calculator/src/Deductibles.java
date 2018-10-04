@@ -20,11 +20,6 @@ public class Deductibles {
     }
 
     public Double calculateItemizedDeductions(Double AGI, Double MAGI, Integer filingStatus) {
-        double rtn = 0;
-        Integer val = 10;
-        Double lols = 100.0;
-        rtn = lols;
-        int integerasdfa = val;
 
         //From charitable donations:
         //percentage limit for charitable donations is 60% of user's AGI

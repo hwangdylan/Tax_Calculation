@@ -4,6 +4,10 @@
 public class GrossIncome {
     private double grossIncome;
 
+    public GrossIncome(double grossIncome) {
+        this.grossIncome = grossIncome;
+    }
+
     public double getGrossIncome() {
         return grossIncome;
     }
@@ -11,8 +15,4 @@ public class GrossIncome {
         grossIncome = income;
     }
 
-    public static void main(String[] args) {
-        System.out.println("hello world");
-
-    }
 }
