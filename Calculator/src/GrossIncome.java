@@ -18,8 +18,8 @@ public class GrossIncome {
         grossIncome = income;
     }
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
     public double getAdjustedGrossIncome() {
         return adjustedGrossIncome;
     }
@@ -52,5 +52,5 @@ public class GrossIncome {
         System.out.println("hello world");
 
     }
->>>>>>> b1427be18c3721253e858e97605883e211b0cad9
+//>>>>>>> b1427be18c3721253e858e97605883e211b0cad9
 }
