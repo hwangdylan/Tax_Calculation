@@ -3,18 +3,20 @@
 /** Calculates the gross income of everything*/
 /** also takes care of calculating Adjusted Gross Income (AGI) and Modified Adjusted Gross Income (MAGI) ??*/
 public class GrossIncome {
-    private double grossIncome;
-    private double adjustedGrossIncome;
-    private double modifiedAdjustedGrossIncome; //only useful for calculations
+    private long grossIncome;
+    private long adjustedGrossIncome;
+    private long modifiedAdjustedGrossIncome; //only useful for calculations
 
-    public GrossIncome(double grossIncome) {
-        this.grossIncome = grossIncome;
+
+    /**default gross income is 0*/
+    public GrossIncome() {
+        this.grossIncome = 0;
     }
 
-    public double getGrossIncome() {
+    public long getGrossIncome() {
         return grossIncome;
     }
-    public void setGrossIncome(Double income) {
+    public void setGrossIncome(long income) {
         grossIncome = income;
     }
 
@@ -40,7 +42,7 @@ public class GrossIncome {
         adjustedGrossIncome = grossIncome;
     }
 
-    public double getModifiedAdjustedGrossIncome() {
+    public long getModifiedAdjustedGrossIncome() {
         return modifiedAdjustedGrossIncome;
     }
     public void setModifiedAdjustedGrossIncome() {

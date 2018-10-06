@@ -10,4 +10,13 @@ public class FilingStatus {
     public static final int MARRIED_JOINT=2;
     public static final int MARRIED_SEPARATE=3;
     public static final int HEAD_OF_HOUSEHOLD=4;
+
+
+    /** all methods will be static as it is the
+     * same for any instance of person
+     */
+    public FilingStatus() {
+
+    }
+
 }

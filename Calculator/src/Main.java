@@ -7,6 +7,7 @@ public class Main {
     final static int DEFAULT_HEIGHT = 500;
     static int width;
     static int height;
+    private GrossIncome person;
     private static void setUI(int width, int height) {
         Main.width = width;
         Main.height = height;
@@ -18,7 +19,7 @@ public class Main {
         //StdDraw.point(width/2, height/2);
         StdDraw.text(width/2, height/2, "Tax Calculator");
     }
-    public static void doNext() {
+    public static void doNext(Person person) {
         char c;
         while (!StdDraw.hasNextKeyTyped()) {
             continue;
@@ -29,20 +30,35 @@ public class Main {
             StdDraw.setPenColor(StdDraw.BLUE);
             StdDraw.text(width/2, height/2 + 100, "What is your gross income?");
             StdDraw.show();
-            newCalculation();
+            newCalculation(person);
 
         } else {
-            doNext();
+            doNext(person);
         }
     }
-    public static void newCalculation() {
-        long seed = seedHelper("", 0);
+
+    /**this is where most of the methods will be called
+     * and processed.
+     * the called methods will be helper methods
+     * @param pers person instance
+     */
+    public static void newCalculation(Person pers) {
+        long seed = askGrossIncome("", 0);
+        GrossIncome temp = pers.getGrossIncome();
+        temp.setGrossIncome(seed);
         StdDraw.clear();
         StdDraw.text(width/2, height - 20, "Your Income: ");
-        StdDraw.text(width/2, height/2, Long.toString(seed));
+        StdDraw.text(width/2, height/2, Long.toString(temp.getGrossIncome()));
+        System.out.println("your income: " + Long.toString(temp.getGrossIncome()));
         StdDraw.show();
+
     }
-    private static long seedHelper(String c, int count) {
+
+    private static long askFilingStatus(String c, int count) {
+        
+        return 0;
+    }
+    private static long askGrossIncome(String c, int count) {
         char curr;
         while (!StdDraw.hasNextKeyTyped()) {
             continue;
@@ -53,7 +69,7 @@ public class Main {
         if (curr == '1' || curr == '2' || curr == '3' || curr == '4' || curr == '5' || curr == '6'
                 || curr == '7' || curr == '8' || curr == '9' || curr == '0') {
             c = (c + String.valueOf(curr));
-            return seedHelper(c, count + 10);
+            return askGrossIncome(c, count + 10);
         } else if (curr == 's' || curr == 'S') {
             StdDraw.textLeft(30, 25, String.valueOf(c));
             StdDraw.show();
@@ -64,16 +80,17 @@ public class Main {
                 StdDraw.clear(Color.GRAY);
                 StdDraw.text(width / 2, height / 2, "Invalid Use only numbers");
                 StdDraw.show();
-                return seedHelper("", 0);
+                return askGrossIncome("", 0);
             }
         } else {
             c = (c + String.valueOf(curr));
-            return seedHelper(c, count + 1);
+            return askGrossIncome(c, count + 1);
         }
 
     }
     public static void main(String[] args) {
+        Person currentPerson = new Person(new GrossIncome(), new FilingStatus(), new Deductibles());
         setUI(DEFAULT_WIDTH, DEFAULT_HEIGHT);
-        doNext();
+        doNext(currentPerson);
     }
 }
