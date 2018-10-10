@@ -4,6 +4,23 @@ public class Deductibles {
 
     public static final double CHARITY_PERCENT = 0.6;
 
+
+
+    private long charitableDonations;
+    private long medicalExpense;
+    private long salt;
+    private long studentLoan;
+    private long mortgageLoan;
+
+    /**default initializes everything to be 0.*/
+    public Deductibles() {
+        charitableDonations = 0;
+        medicalExpense = 0;
+        salt = 0;
+        studentLoan = 0;
+        mortgageLoan = 0;
+    }
+
     public Double calculateDependents() { //calculate deductions due to dependents
         return 0.0;
     }

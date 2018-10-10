@@ -55,7 +55,7 @@ public class Main {
     }
 
     private static long askFilingStatus(String c, int count) {
-        
+
         return 0;
     }
     private static long askGrossIncome(String c, int count) {
