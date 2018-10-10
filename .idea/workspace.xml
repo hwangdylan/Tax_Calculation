@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bcb79f2-f769-4865-8f4d-a60a0eaf7513" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Calculator/src/ModifiedAdjustedGrossIncome.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Calculator/src/AdjustedGrossIncome.java" afterPath="$PROJECT_DIR$/Calculator/src/AdjustedGrossIncome.java" />
+      <change beforePath="$PROJECT_DIR$/Calculator/src/ModifiedAdjustedGrossIncome.java" afterPath="$PROJECT_DIR$/Calculator/src/ModifiedAdjustedGrossIncome.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,9 +39,19 @@
       <file leaf-file-name="ModifiedAdjustedGrossIncome.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Calculator/src/ModifiedAdjustedGrossIncome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="408">
+              <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+              <folding>
+                <element signature="method#setContributionOfIRA#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+                <element signature="method#setStudentLoan_Tuition#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+                <element signature="method#setHalfSelfEmployment#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+                <element signature="method#setPassiveIncome#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+                <element signature="method#setExcludedForeignIncome#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+                <element signature="method#setRentalLoss#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+                <element signature="method#setInterestFromEESaving#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+                <element signature="method#setEmployerPaidAdoption#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+                <element signature="method#setLossFromPublicTradedPartnership#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +59,8 @@
       <file leaf-file-name="AdjustedGrossIncome.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Calculator/src/AdjustedGrossIncome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            <state relative-caret-position="119">
+              <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -426,7 +434,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -813,17 +823,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Calculator/src/AdjustedGrossIncome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Calculator/src/ModifiedAdjustedGrossIncome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="408">
+          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="method#setContributionOfIRA#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+            <element signature="method#setStudentLoan_Tuition#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+            <element signature="method#setHalfSelfEmployment#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+            <element signature="method#setPassiveIncome#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+            <element signature="method#setExcludedForeignIncome#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+            <element signature="method#setRentalLoss#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+            <element signature="method#setInterestFromEESaving#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+            <element signature="method#setEmployerPaidAdoption#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+            <element signature="method#setLossFromPublicTradedPartnership#0;class#ModifiedAdjustedGrossIncome#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
